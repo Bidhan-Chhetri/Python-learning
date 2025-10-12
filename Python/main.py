@@ -1,8 +1,9 @@
-def get_choices():
-    player_choice = "rock"
-    computer_choice = "paper"
+def main(to = "world"):
+    name = input("Enter your name: ")
+    hello(name)
 
-    return computer_choice
 
-choices = get_choices()
-print(choices)
+def hello(to):
+    print("Hello", to)
+
+main()
