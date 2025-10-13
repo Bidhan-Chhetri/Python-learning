@@ -1,5 +1,6 @@
 def main():
-    question = str(input("What is the Answer to the Question of Life, the Universe, and Everything? "))
+    question = str(input("What is the Answer to the Question of Life, the Universe, and Everything? ")) 
+    question = " ".join(question.strip().lower().split())
     check(question)
 
 def check(value):
