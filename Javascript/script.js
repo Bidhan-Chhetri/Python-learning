@@ -59,6 +59,57 @@
 
  // PRACTICE QUESTION 5
 
- let name = prompt("Enter your Full Name");
-    string = "@" + name + name.length;
- console.log(string);
+//  let name = prompt("Enter your Full Name");
+//     string = "@" + name + name.length;
+//  console.log(string);
+
+// PRACTICE QUESTION 6 FIND THE AVERAGE MARKS OF ENTIRE CLASS
+
+// let student = [285, 597, 644, 237, 676, 460];
+// let n = student.length;
+// let array = 0;
+// for (let i = 0; i < n; i++) {
+//    array = array + student[i];
+// }
+// let average = array / n;
+
+// console.log("Average marks of entrie class:", average);
+
+// PRACTICE QUESTION 7 CREATE AN ARRAY TO STORE COMPANY
+
+// companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"]
+
+// let remove = companies.splice(0, 1)
+// remove = companies.splice(1,1, "ola");
+// add = companies.splice(5,0, "Amazon");
+// console.log(companies);
+
+// PRACTICE QUESTION 8 CREATE A FUNCTION AND TAKE A STRING ARGUMENT AND RETURN THE NUMBER OF VOWELS IN IT
+
+// function vowels(string) {
+//    length = string.length;
+//    letters = string.toLowerCase();
+//    let add = 0;
+//    for(let i = 0; i < length; i++) {
+//       if (letters[i] === "a" || letters[i] === "e" || letters[i] === "i" || letters[i] === "o" || letters[i] === "u") {
+//          add = add + letters[i];
+//       }
+//    }
+//    return add;
+// }
+
+// let result = vowels("Bidhan Chhetri");
+// console.log(result, result.length);
+
+// const arrow_vowels = (str) => {
+//     length = str.length;
+//    letters = str.toLowerCase();
+//    let add = 0;
+//    for(let i = 0; i < length; i++) {
+//       if (letters[i] === "a" || letters[i] === "e" || letters[i] === "i" || letters[i] === "o" || letters[i] === "u") {
+//          add = add + letters[i];
+//       }
+//    }
+//    return add;
+// }
+
