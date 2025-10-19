@@ -22,7 +22,7 @@ fruit_calories = {
 }
 
 def main(): 
-    fruits = input("Fruits: ").lower()
+    fruits = input("Items: ").lower()
     if fruits in fruit_calories:
             print(f"Calories: {fruit_calories[fruits]}")
 
