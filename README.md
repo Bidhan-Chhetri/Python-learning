@@ -17,7 +17,6 @@ This repository documents my personal journey in learning Python and JavaScript.
 ## 🚀 Goals<br>
 
 - Build automation tools and freelance-ready projects<br>
-- Prepare for TechAxis Full Stack Bootcamp (Ashadh 2082)<br>
 - Push clean, documented code to GitHub weekly<br>
 
 ## 📌 How to Run<br>
