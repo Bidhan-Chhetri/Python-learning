@@ -1,12 +1,30 @@
-import requests
-import sys
-import json
+# import requests
+# import sys
+# import json
 
-if len(sys.argv) != 2:
-    sys.exit()
+# if len(sys.argv) != 2:
+#     sys.exit()
 
-response = requests.get("https://itunes.apple.com/search?entity=song&limit=10&term=" + sys.argv[1])
+# response = requests.get("https://itunes.apple.com/search?entity=song&limit=10&term=" + sys.argv[1])
 
-o = response.json()
-for result in o["results"]:
-    print(result["trackName"])
+# o = response.json()
+# for result in o["results"]:
+#     print(result["trackName"])
+
+
+
+
+def main():
+    helloo("world")
+    goodbye("world")
+
+def helloo(name):
+    print(f"hello, {name}")
+
+def goodbye(name):
+    print(f"goodbye, {name}")
+
+if __name__ == "__main__":
+    main()
+
+
