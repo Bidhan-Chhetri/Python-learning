@@ -1,14 +1,12 @@
-def main():
-    x = get_int()
-    print(f"x is {x}")
+import requests
+import sys
+import json
 
-def get_int():
-    while (True):
-        try:
-            x = int(input("What's x? "))
-        except ValueError:
-            print("x is not an integer")
-        else:
-            return x
+if len(sys.argv) != 2:
+    sys.exit()
 
-main()
+response = requests.get("https://itunes.apple.com/search?entity=song&limit=10&term=" + sys.argv[1])
+
+o = response.json()
+for result in o["results"]:
+    print(result["trackName"])
