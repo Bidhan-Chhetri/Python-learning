@@ -1,39 +1,58 @@
 import random
 
+ROCK = "r"
+SCISSOR = "s"
+PAPER = "p"
+emojies = {"r": "🪨", "p" : "📃", "s" : "✂️"}
+option = tuple(emojies.keys())
+
 def main():
-    
-    computer = random.choice(["rock", "paper", "scissor"])
+    answer = choosing()
+    computer_choice = display_choices()
+    determine_winner(answer, computer_choice)
+    check_continue = input("Continue (y/n): ")
+    if check_continue == "y":
+        main()
+            
+
+
+def choosing():
     while True:
         answer = str(input("Rock, paper or scissor? (r/p/s): ")).lower()
-        if answer == "r":
-            if computer == "rock" or computer == "r":
+
+        if answer in option:
+            print(f"you Choose {emojies[answer]}")
+            break
+        else:
+            print("Enter the valid integer")
+    return answer
+
+def display_choices():
+        computer = random.choice(option)
+        print(f"Computer choose {emojies[computer]}")
+        return computer
+
+def determine_winner(answer, computer):      
+        if answer == ROCK:
+            if computer == ROCK:
                 print("Tie")
-            elif computer == "paper" or computer == "p":
+            elif computer == PAPER:
                 print("Computer wins")
             else:
                 print("I win")
         elif answer == "s":
-            if computer == "scissor" or computer == "s":
+            if computer == "s":
                 print("Tie")
-            elif computer == "rock" or computer == "r":
+            elif computer == ROCK:
                 print("Computer wins")
             else:
                 print("I win")
-        elif answer == "p":
-            if computer == "paper" or computer == "p":
+        elif answer == PAPER:
+            if computer == PAPER:
                 print("Tie")
-            elif computer == "rock" or computer == "r":
+            elif computer == ROCK:
                 print("Computer wins!")
             else:
                 print("I win")
-        elif answer in ["r", "p", "s"]:
-            print("Enter the valid integer")
-            continue
-        print(f"Computer choose {computer}")
-        
-        choose = str(input("Continue (y/n): ")).lower()
-        if choose == "y":
-            continue
-        else:
-            break
+
 main()
