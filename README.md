@@ -10,7 +10,6 @@ This repository documents my personal journey in learning Python and JavaScript.
 
 ## ✅ Progress Highlights<br>
 
-- Completed CS50P problem sets up to Week 3<br>
 - Practicing reusable freelance-ready Python scripts<br>
 - Exploring JavaScript fundamentals for frontend development<br>
 
