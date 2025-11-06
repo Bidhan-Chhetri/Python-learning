@@ -18,8 +18,8 @@ This repository documents my personal journey in learning Python and JavaScript.
 - Build automation tools and freelance-ready projects<br>
 - Push clean, documented code to GitHub weekly<br>
 
-## 📌 How to Run
+## 📌 How to Run<br>
 
 Most Python scripts can be run using:<br>
 ```bash<br>
-python filename.py <br>
+python filename.py 
