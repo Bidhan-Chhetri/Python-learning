@@ -10,7 +10,7 @@ print(10 + 4j - 3 - 2j + 8j)    # Complex number arthemetic operation
 
 print(type(10))     # Int
 print(type(3.14))   # Float
-print(type(1 + 3j)) # Complex
+print(type(2j + 3 +4j - 3j + 4)) # Complex
 print(type('Bidhan'))   # String
 print(type([1, "Bidhan", 1.5])) # List
 print(type({'Name': 'Bidhan', 'Age': '18'}))  # Dictionary
